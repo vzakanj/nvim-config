@@ -11,7 +11,6 @@ call plug#begin()
 " Source vimrc to pick up added/removed plugins from configuration and install
 " plugins
 nnoremap <leader>pi :so $MYVIMRC<CR>:PlugInstall<CR>
-Plug 'carakan/new-railscasts-theme'
 Plug 'altercation/vim-colors-solarized'
 Plug 'sheerun/vim-polyglot', { 'do': './build' }
 
@@ -40,8 +39,11 @@ set noeb vb t_vb=
 autocmd GUIEnter * set vb t_vb= " The visual bell needs to be set after the gui has been initialized for gvim
 
 
+" Adjust colors to dark theme
+set background=dark
+silent! colorscheme solarized
+
 if has('gui_running')
-	silent! colorscheme new-railscasts
 	set guifont=Fira_Mono_for_Powerline:h12
 
 	set go+=c " Use console dialogs instead of GUI
@@ -49,10 +51,6 @@ if has('gui_running')
 	set go-=T " Remove toolbar
 	set go-=R " Remove right vertical toolbar
 	set go-=L " Remove left vertical toolbar
-else
-	" Adjust colors to dark theme
-	set background=dark
-	silent! colorscheme solarized
 endif
 
 set rnu nu " Enable relative numbers with current line showing absolute line number

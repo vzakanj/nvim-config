@@ -18,7 +18,7 @@ Plug 'sheerun/vim-polyglot', { 'do': './build' }
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
 "}}}
 
-"{{{-- vim-airline
+"{{{ -- vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts=1
@@ -27,7 +27,7 @@ let g:airline_theme='solarized'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
-"{{{ --fz
+"{{{ --fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 

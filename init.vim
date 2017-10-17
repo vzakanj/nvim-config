@@ -41,6 +41,19 @@ nnoremap <leader>ft :Filetypes<CR>
 "}}}
 
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+
+"{{{ -- vim-fugitive
+Plug 'tpope/vim-fugitive'
+
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gm :Gmove<CR>
+nnoremap <leader>gg :Ggrep<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gd :Gdelete<CR>
+"}}}
 
 call plug#end()
 

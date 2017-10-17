@@ -34,7 +34,7 @@ Plug 'junegunn/fzf.vim'
 nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fs :Ag<CR>
 nnoremap <leader>fb :Buffers<CR>
-nnoremap <leader>fb :Windows<CR>
+nnoremap <leader>fw :Windows<CR>
 nnoremap <leader>fm :Marks<CR>
 nnoremap <leader>ft :Filetypes<CR>
 

@@ -27,7 +27,7 @@ let g:airline_theme='solarized'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
-"{{{ --fzf
+"{{{ --fz
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
@@ -39,6 +39,8 @@ nnoremap <leader>fm :Marks<CR>
 nnoremap <leader>ft :Filetypes<CR>
 
 "}}}
+
+Plug 'tpope/vim-surround'
 
 call plug#end()
 

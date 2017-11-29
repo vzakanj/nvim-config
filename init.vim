@@ -1,7 +1,6 @@
 "{{{ -- Plugins
 " Install vim plug if not installed
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
-	silent !echo "No vim-plug detected, downloading..."
 	silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	autocmd VimEnter * PlugInstall
 endif
@@ -128,6 +127,7 @@ set complete-=i " Don't use loaded files content for completion
 
 set incsearch " Search for the pattern while typing
 set ignorecase " Ignore case when searching for the pattern
+set nohlsearch "Don't highlight searched text"
 set smartcase " Ignore case when searching for the pattern if the pattern doesn't contain uppercase characters
 set autoread " Automatically read file when changed outside of editor
 
